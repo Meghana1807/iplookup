@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Location Tracker</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"
+          >B13 Team 12's WT Project</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about"
+                >Your Location</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services"
+                >Some Knowledge</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Actual Knowledge</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="bg-primary text-black">
+      <div class="container text-center">
+        <h1>IP ADDRESS TRACKER!</h1>
+        <p class="lead">You are not anonymous😁</p>
+      </div>
+    </header>
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Your Location is:</h2>
+            <p class="ways">
+              Latitude: <span id="latitude"></span>&deg;<br />
+              Longitude: <span id="longitude"></span>&deg; <br />
+              Ip Address: <span id="ip"></span><br />
+              Location: <span id="city"></span><br />
+              Region Name: <span id="region_name"></span><br />
+              Zipcode: <span id="zip"></span><br />
+              Type of IP: <span id="type"></span><br />
+              Country: <span id="country_name"></span><br />
+            </p>
+            <div id="mymap"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>All about IP:</h2>
+            <p class="lead">
+              IP address is known as Internet Protocol. It is a unique address
+              that identifies the device on the internet or the local network.
+              IP adresses are the identifier that allow local information to be
+              sent between devices on network.
+            </p>
+            <p class="lead">
+              These are not just some random numbers but are assigned by the
+              Internet Assigned Numbers Authority (IANA), a division of the
+              Internet Corporation for Assigned Names and Numbers (ICANN).All
+              devices find, send, and exchange information with other connected
+              devices using this protocol. By speaking the same language, any
+              computer in any location can talk to one another
+              <h5>Types of IP Addresses:</h5>
+              <img src="IP.JPG" width="700" height="500" > 
+              <img src="crapp.jpg" width="700" height="150">
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1>ENOUGH OF THE CRAP.</h1>
+            <h2>What you need to know?</h2>
+            <p class="lead">
+              Did you know that finding a user's IP address is very easy like you can find yours on this website. What can be done with your IP address?
+              <h6>Online Stalking</h6>
+              <p>Criminals can track down your IP address by merely stalking your online activity. Any number of online activities can reveal your IP address, from playing video games to commenting on websites and forums.</p>
+              <h6>Downloading illegal content using your IP address</h6>
+              <p> Using the identity of your IP address, criminals could download pirated movies, music, and video – which would breach your ISP’s terms of use.</p>
+              <h6>Tracking down your location</h6>
+              <p> Hackers can use geolocation technology to identify your region, city, and state. </p>
+              <h6>Hacking into your device</h6>
+              <p>There are thousands of ports for every IP address, and a hacker who knows your IP can try those ports to attempt to force a connection.</p>
+              <h2>What can you do?</h2>
+              
+              <ul>
+                <li>
+                 Change privacy settings on instant messaging applications which use your IP address.
+                </li>
+                <li>
+                  Create unique passwords.
+                </li>
+                <li>
+                  Stay alert to phishing emails and malicious content.
+                </li>
+                <li>
+                  Use a good antivirus solution and keep it up to date
+                </li>
+                <li>
+                  Do not just accept but read the permissions asked by an application or a website.
+                </li>
+              </ul>            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          You are still not anonymous👀
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/app.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
