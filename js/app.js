@@ -21,7 +21,7 @@ if ("geolocation" in navigator) {
   console.log("geolocation not available");
 }
 
-let url = `https://api.ipstack.com/check?access_key=${ip_access}&format=1`;
+let url = `https://api.ipstack.com/check?access_key=${ip_access}`;
 
 fetch(url)
   .then((response) => response.json())
