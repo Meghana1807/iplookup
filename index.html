@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""
+    ></script>
+    <title>Data Selfie App - Location Tracker</title>
+  </head>
+
+  <body>
+    <h1>IP lookup</h1>
+    <p class="ways">
+      latitude: <span id="latitude"></span>&deg;<br />
+      longitude: <span id="longitude"></span>&deg; <br />
+      Ip Address: <span id="ip"></span><br />
+      Location: <span id="city"></span><br />
+      Region Name: <span id="region_name"></span><br />
+      Zipcode : <span id="zip"></span><br />
+      Type of IP:<span id="type"></span><br />
+      Country : <span id="country_name"></span><br />
+    </p>
+    <div id="mymap"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

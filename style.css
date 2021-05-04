@@ -1,0 +1,21 @@
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#mymap {
+  height: 300px;
+  width: 70vw;
+}
+
+.creator {
+  color: crimson;
+}
+
+.ways {
+  text-transform: capitalize;
+}
