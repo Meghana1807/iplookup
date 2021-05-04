@@ -26,6 +26,7 @@ let url = `https://api.ipstack.com/check?access_key=${ip_access}&format=1`;
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
+    console.log(data);
     document.getElementById("city").textContent = data.city;
     document.getElementById("ip").textContent = data.ip;
     document.getElementById("region_name").textContent = data.region_name;
